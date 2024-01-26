@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="modal__card__parent">
+      <div class="modal__card">
+        <button
+          class="modal__card__dismiss"
+          type="button"
+          onclick="modalDismissHandler(event)"
+        >
+          ×
+        </button>
+        <div class="modal__card__header">
+          <div class="modal__card__content">
+            <span class="modal__card__title">Order validated</span>
+            <p class="modal__card__message">
+              Thank you for your purchase. you package will be delivered within
+              2 days of your purchase
+            </p>
+          </div>
+          <div class="modal__card__actions">
+            <button class="modal__card__history" type="button">History</button>
+            <button class="modal__card__track" type="button">
+              Track my package
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="board">
+      <div class="row">
+        <div id="0" class="item">
+          <label class="container">
+            <input type="checkbox" onclick="f(event)" />
+            <div class="checkmark"></div>
+          </label>
+        </div>
+        <div id="1" class="item">
+          <label class="container">
+            <input type="checkbox" onclick="f(event)" />
+            <div class="checkmark"></div>
+          </label>
+        </div>
+        <div id="2" class="item">
+          <label class="container">
+            <input type="checkbox" onclick="f(event)" />
+            <div class="checkmark"></div>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div id="3" class="item">
+          <label class="container">
+            <input type="checkbox" onclick="f(event)" />
+            <div class="checkmark"></div>
+          </label>
+        </div>
+        <div id="4" class="item">
+          <label class="container">
+            <input type="checkbox" onclick="f(event)" />
+            <div class="checkmark"></div>
+          </label>
+        </div>
+        <div id="5" class="item">
+          <label class="container">
+            <input type="checkbox" onclick="f(event)" />
+            <div class="checkmark"></div>
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="6" class="item">
+          <label class="container">
+            <input type="checkbox" onclick="f(event)" />
+            <div class="checkmark"></div>
+          </label>
+        </div>
+        <div id="7" class="item">
+          <label class="container">
+            <input type="checkbox" onclick="f(event)" />
+            <div class="checkmark"></div>
+          </label>
+        </div>
+        <div id="8" class="item">
+          <label class="container">
+            <input type="checkbox" onclick="f(event)" />
+            <div class="checkmark"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="game__menue">
+      <div class="switchMarker">
+        <input
+          id="switch"
+          type="checkbox"
+          onchange="markerchangeHandler(event)"
+        />
+        <div class="app">
+          <div class="bodym">
+            <div class="phone">
+              <div class="content">CHANGE YOUR MARK?</div>
+
+              <label class="lable" for="switch">
+                <div class="toggle"></div>
+                <div class="names">
+                  <p class="light">O</p>
+                  <p class="dark">X</p>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="refreshBTN">
+        <button
+          type="button"
+          class="refreshBTN__button"
+          onclick="refreshHandler(event)"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-repeat"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"
+            ></path>
+          </svg>
+          Play Again
+        </button>
+      </div>
+    </div>
+    <script src="./xo.js"></script>
+  </body>
+</html>
